@@ -1,0 +1,10 @@
+### all ignore ###
+/*
+/.**
+
+### not ignore ###
+!/nvim
+!/nvim/init.vim
+!.gitignore
+!profile.ps1
+!README.md
