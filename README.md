@@ -33,4 +33,7 @@ scoop bucket add extras
 - lazygit
 - scoop-completion
 - neovim
+- fzf
+- psfzf
+- neofetch
 
