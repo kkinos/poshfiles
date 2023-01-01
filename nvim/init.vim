@@ -5,16 +5,16 @@ set expandtab
 set textwidth=0
 set autoindent
 set hlsearch
+set noswapfile
+set showtabline=2
+set mouse=a
 inoremap <silent> jj <Esc>
 inoremap <silent> っｊ <Esc>
+nnoremap <Esc><Esc> :nohlsearch<CR>
 syntax on
+set termguicolors
 
 call plug#begin()
-Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'lambdalisue/nerdfont.vim'
 call plug#end()
-
-" Start NERDTree when Vim is started without file arguments.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
-let NERDTreeShowHidden=1
