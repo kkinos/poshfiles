@@ -4,6 +4,7 @@ Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadlineOption -HistoryNoDuplicates
 Set-PSReadlineOption -BellStyle None
+Set-PSReadlineOption -Colors @{InlinePrediction='DarkGreen'}
 
 Import-Module "$($(Get-Item $(Get-Command scoop.ps1).Path).Directory.Parent.FullName)\modules\scoop-completion"
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
