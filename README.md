@@ -38,6 +38,7 @@ scoop bucket add extras
 - fzf
 - psfzf
 - neofetch
+- bottom
 
 ## Setup Neovim
 
