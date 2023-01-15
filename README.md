@@ -15,7 +15,7 @@ if (Test-Path $script) {
 }
 ```
 
-## Install PowerShell7 and oh-my-posh at Microsoft Store
+## Install PowerShell7
 
 ## Install Scoop
 
@@ -30,6 +30,7 @@ iwr -useb get.scoop.sh | iex
 scoop bucket add extras
 ```
 
+- starship
 - aria2
 - git
 - lazygit

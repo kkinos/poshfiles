@@ -1,5 +1,3 @@
-oh-my-posh init pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/powerlevel10k_rainbow.omp.json | Invoke-Expression
-
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadlineOption -HistoryNoDuplicates
@@ -17,3 +15,4 @@ Set-Alias lg lazygit
 $Env:XDG_CONFIG_HOME = $HOME+"\poshfiles"
 [Environment]::SetEnvironmentVariable("XDG_CONFIG_HOME", $ENV:XDG_CONFIG_HOME, [EnvironmentVariableTarget]::User)
 
+Invoke-Expression (&starship init powershell)
