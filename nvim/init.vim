@@ -15,6 +15,11 @@ syntax on
 set termguicolors
 
 call plug#begin()
+Plug 'projekt0n/github-nvim-theme'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'lambdalisue/nerdfont.vim'
 call plug#end()
+
+" github-nvim-thme
+let g:github_sidebars = ["terminal"]
+colorscheme github_dimmed
