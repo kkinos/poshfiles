@@ -5,6 +5,8 @@
 ### not ignore ###
 !/nvim
 !/nvim/init.vim
+!/.bin
+!/.bin/usb_serial_for_wsl.ps1
 !.gitignore
 !profile.ps1
 !README.md
