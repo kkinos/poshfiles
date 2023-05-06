@@ -40,6 +40,13 @@ scoop bucket add extras
 - psfzf
 - neofetch
 - bottom
+- gsudo
+
+### Update tools
+
+```ps
+scoop update *
+```
 
 ## Setup Neovim
 
